@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rahul.dbsql.MainActivity">
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_marginTop="147dp"
+        android:hint="Name"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="cursive"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_marginTop="13dp"
+        android:hint="SurName"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="cursive"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:id="@+id/sname" />
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_marginTop="16dp"
+        android:hint="Marks"
+        android:textStyle="bold"
+        android:id="@+id/marks"
+        android:textSize="30dp"
+        android:fontFamily="cursive"
+        android:layout_below="@+id/sname"
+        android:layout_alignLeft="@+id/sname"
+        android:layout_alignStart="@+id/sname"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="INSERT"/>
+</RelativeLayout>
